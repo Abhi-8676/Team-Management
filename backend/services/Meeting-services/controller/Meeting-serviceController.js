@@ -180,7 +180,7 @@ exports.addRecording = async (req, res) => {
   await meeting.save();
 
   // Optionally, construct a full shareable link
-  const shareableLink = `${process.env.SERVER_URL || "http://localhost:4007"}${url}`;
+  const shareableLink = `${process.env.SERVER_URL || "https://frontend-ochre-six-98.vercel.app"}${url}`;
   res.json({ status: "ok", shareableLink });
 };
 
