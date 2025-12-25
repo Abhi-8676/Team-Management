@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = import.meta.env.VITE_USER_API_URL || "https://frontend-ochre-six-98.vercel.app/api/user";
+const API = import.meta.env.VITE_USER_API_URL || "https://backend-slack-team.vercel.app/api/user";
 
 export async function registerUser({ username, password, email }) {
   const res = await axios.post(`${API}/register`, { username, password, email });
