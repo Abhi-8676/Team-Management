@@ -2,7 +2,7 @@
 import axios from "axios";
 import { io } from "socket.io-client";
 
-const API = import.meta.env.VITE_MEETING_API_URL || "https://frontend-ochre-six-98.vercel.app/api" || "/api";
+const API = import.meta.env.VITE_MEETING_API_URL || "https://backend-slack-team.vercel.app/api" || "/api";
 
 // 
 
