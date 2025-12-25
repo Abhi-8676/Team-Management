@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = import.meta.env.VITE_AI_API_URL || "http://localhost:4004/api/ai";
+const API = import.meta.env.VITE_AI_API_URL || "https://frontend-ochre-six-98.vercel.app/api/ai";
 
 export async function summarizeChat(messages) {
   const res = await axios.post(`${API}/summarize`, { messages });
