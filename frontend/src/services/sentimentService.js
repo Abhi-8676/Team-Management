@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_AI_API_URL || "https://frontend-ochre-six-98.vercel.app/api/ai";
+const API = import.meta.env.VITE_AI_API_URL || "https://backend-slack-team.vercel.app/api/ai";
 
 export async function analyzeSentiment(transcript) {
   const res = await fetch(`${API}/sentiment`, {
