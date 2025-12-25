@@ -105,7 +105,7 @@ exports.uploadMedia = async (req, res) => {
     try {
       // Call AI microservice to get summary
       const aiRes = await axios.post(
-        process.env.AI_SERVICE_URL || "http://localhost:4004/summarize",
+        process.env.AI_SERVICE_URL || "https://frontend-ochre-six-98.vercel.app/summarize",
         {
           filename: req.file.originalname,
           file: fileData.toString("base64"),
