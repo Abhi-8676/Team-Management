@@ -2,8 +2,8 @@ import { useEffect, useState, useCallback } from "react";
 import { io } from "socket.io-client";
 import axios from "axios";
 
-const socket = io(import.meta.env.VITE_CHAT_SOCKET_URL || "https://frontend-ochre-six-98.vercel.app");
-const API = import.meta.env.VITE_CHAT_API_URL || "https://frontend-ochre-six-98.vercel.app/api";
+const socket = io(import.meta.env.VITE_CHAT_SOCKET_URL || "https://backend-slack-team.vercel.app");
+const API = import.meta.env.VITE_CHAT_API_URL || "https://backend-slack-team.vercel.app/api";
 
 export function useChat() {
   const [messages, setMessages] = useState([]);
