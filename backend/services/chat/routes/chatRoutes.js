@@ -74,7 +74,7 @@ router.post("/upload", upload.single("file"), (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: "No file uploaded" });
   }
-  const fileUrl = `${process.env.SERVER_URL || "http://localhost:4001"}/uploads/${req.file.filename}`;
+  const fileUrl = `${process.env.SERVER_URL || "https://frontend-ochre-six-98.vercel.app"}/uploads/${req.file.filename}`;
   res.json({
     url: fileUrl,
     name: req.file.filename, // Use this for download!
