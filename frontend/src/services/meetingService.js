@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = import.meta.env.VITE_GATEWAY_API_URL || "http://localhost:4002/api";
+const API = import.meta.env.VITE_GATEWAY_API_URL || "https://frontend-ochre-six-98.vercel.app/api";
 
 export async function fetchMeetings() {
   const res = await axios.get(`${API}/meetings`);
